@@ -32,8 +32,11 @@ module.exports = {
     //     accounts: [`0x${process.env.ACCOUNT1}`, `0x${process.env.ACCOUNT2}`],
     //  }
     },
+    local: {
+      url: "http://localhost:24012/rpc"
+    },
     goerli: {
-      url: process.env.GOERLI,
+      url: process.env.GOERLI || "",
       accounts: [`0x${process.env.ACCOUNT1}`, `0x${process.env.ACCOUNT2}`],
       chainId: 5,
       allowUnlimitedContractSize: true,
