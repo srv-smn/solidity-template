@@ -11,7 +11,7 @@
     "compile": "hardhat compile",
     "contract-size": "hardhat size-contracts",
     "doc": "hardhat dodoc",
-    "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp build --network hardhat",
+    "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp build",
     "flatten": "hardhat flatten contracts/file_name.sol > flatten/file_name.sol",
     "lint": "yarn run lint:sol && yarn run lint:ts && yarn run prettier && yarn run prettier:list-different",
     "verify-goerli": "hardhat verify --network goerli",
